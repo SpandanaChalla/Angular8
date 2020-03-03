@@ -9,12 +9,16 @@ export class ServerComponent implements OnInit{
     servername:string = 'Explorer';
     allowNewServer = true;
     ServerStatus = "no server was created"
+    ServerUpdate='';
     serverDetails(){
          return this.servername;
     }
     OnCreateServer(){
         console.log("Hiii");
        this.ServerStatus = "Server created"
+    }
+    OnUpdateServer(event: Event){
+        this.ServerUpdate= (<HTMLInputElement>event.target).value;
     }
     constructor(){
         setTimeout(()=>{    //<<<---    using ()=> syntax

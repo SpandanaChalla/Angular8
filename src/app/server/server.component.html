@@ -1,6 +1,12 @@
+<!-- StingInterpolation -->
 <p>
     {{serverId}} ,{{servername}} and {{serverDetails()}}
 </p>
+<!-- Event Binding,Propertybinding -->
 <button class="btn btn-primary"  [disabled]=!allowNewServer (click)="OnCreateServer()">Add Server</button>
 
 <p>Status is : {{ServerStatus}}</p>
+<label>Server name</label>
+<!-- $Event -->
+<input type="text" class="form-control" (input)="OnUpdateServer($event)">
+{{ServerUpdate}}
