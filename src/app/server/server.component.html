@@ -9,4 +9,6 @@
 <label>Server name</label>
 <!-- $Event -->
 <input type="text" class="form-control" (input)="OnUpdateServer($event)">
+{{ServerUpdate}} 
+<input type="text" class="form-control" [(ngModel)]="ServerUpdate">
 {{ServerUpdate}}

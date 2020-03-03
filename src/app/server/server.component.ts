@@ -1,5 +1,4 @@
 import { Component ,OnInit} from '@angular/core';
-
 @Component({
     selector:'app-Server',
     templateUrl:'./server.component.html'
@@ -9,7 +8,7 @@ export class ServerComponent implements OnInit{
     servername:string = 'Explorer';
     allowNewServer = true;
     ServerStatus = "no server was created"
-    ServerUpdate='';
+    ServerUpdate='helloooo';
     serverDetails(){
          return this.servername;
     }
